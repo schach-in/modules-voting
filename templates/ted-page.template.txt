@@ -1,0 +1,28 @@
+# Zugzwang Project
+# deutsche-schachjugend.de
+# Copyright (c) 2019 Gustaf Mossakowski <gustaf@koenige.org>
+# HTML-Ausgabe: Komplette Webseite
+#
+<!DOCTYPE html>
+<html lang="%%% page lang %%%">
+<head>
+	<title>%%% page pagetitle %%%</title>
+	<link rel="stylesheet" type="text/css" href="/_layout/ted/ted.css">
+	<link rel="icon" href="/favicon.ico" type="image/x-ico">
+	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+%%% condition if page description %%%
+	<meta name="description" content="%%% page description %%%">
+%%% condition endif %%%
+%%% page head %%%
+</head>
+<body%%% page extra_body_attributes " %s" %%%>
+<div class="tedtable">
+<div class="tedrow">
+<div class="tedcell">
+%%% page text %%%
+</div>
+</div>
+</div>
+</body>
+</html>
