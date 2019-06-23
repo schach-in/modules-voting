@@ -1,0 +1,34 @@
+# Zugzwang Project
+# deutsche-schachjugend.de
+# Copyright (c) 2019 Gustaf Mossakowski <gustaf@koenige.org>
+# TED voting
+#
+%%% condition if no_active_question %%%
+<p><big>Gerade kann keine Frage beantwortet werden.</big></p>
+
+<p><big><a href="/ted/">Erneut versuchen</a></big></p>
+
+%%% condition elseif already_voted %%%
+<p><big>Zweimal abstimmen geht nicht.</big></p>
+
+<p><big><a href="/ted/">Erneut versuchen</a></big></p>
+%%% condition elseif voted %%%
+<p><big>Danke, die Stimme ist eingegangen!</big></p>
+
+<p><big><a href="/ted/">Zur nächsten Abstimmung.</a></big></p>
+
+%%% condition else %%%
+%%% condition if voted_for_different_question %%%
+<p><big>Die Stimme wurde nicht gezählt, da wir schon bei der nächsten Frage sind!</big></p>
+%%% condition endif %%%
+
+<form action="/ted/" method="POST">
+
+<input type="submit" name="answer" value="A">
+<input type="submit" name="answer" value="B">
+<input type="submit" name="answer" value="C">
+<input type="submit" name="answer" value="D">
+<input type="hidden" name="question_id" value="%%% item question_id %%%">
+
+</form>
+%%% condition endif %%%
