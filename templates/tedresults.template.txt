@@ -1,0 +1,11 @@
+# Zugzwang Project
+# deutsche-schachjugend.de
+# Copyright (c) 2019 Gustaf Mossakowski <gustaf@koenige.org>
+# TED results
+#
+%%% loop results %%%
+<div style="float: left; width: 90px; height: 300px; position: relative;">
+<div style="width: 60px; height: %%% item votes %%%px; min-height: 1px; position: absolute; bottom: 20px; background: red; "></div>
+<big><strong>%%% item answer %%%</strong></big>
+</div>
+%%% loop end %%%
