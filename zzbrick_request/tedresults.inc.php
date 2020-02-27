@@ -2,7 +2,7 @@
 
 // Zugzwang Project
 // deutsche-schachjugend.de
-// Copyright (c) 2019 Gustaf Mossakowski <gustaf@koenige.org>
+// Copyright (c) 2019-2020 Gustaf Mossakowski <gustaf@koenige.org>
 // TED results
 
 
@@ -17,7 +17,7 @@ function mod_ted_tedresults() {
 	$data = wrap_db_fetch($sql);
 
 	$sql = 'SELECT COUNT(*) AS votes, answer FROM votes WHERE question_id = %d
-		AND !ISNULL(answer) AND answer != ""
+		AND NOT ISNULL(answer) AND answer != ""
 		GROUP BY answer ';
 	$sql = sprintf($sql, $data['question_id']);
 	$data['results_db'] = wrap_db_fetch($sql, 'answer');
