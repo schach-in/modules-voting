@@ -1,11 +1,15 @@
-SET NAMES utf8;
-SET time_zone = '+00:00';
-SET foreign_key_checks = 0;
-SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+/**
+ * Zugzwang Project
+ * SQL for installation of ted module
+ *
+ * http://www.zugzwang.org/modules/ted
+ *
+ * @author Gustaf Mossakowski <gustaf@koenige.org>
+ * @copyright Copyright © 2021 Gustaf Mossakowski
+ * @license http://opensource.org/licenses/lgpl-3.0.html LGPL-3.0
+ */
 
-SET NAMES utf8mb4;
 
-DROP TABLE IF EXISTS `questions`;
 CREATE TABLE `questions` (
   `question_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `question` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -14,7 +18,6 @@ CREATE TABLE `questions` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
-DROP TABLE IF EXISTS `votes`;
 CREATE TABLE `votes` (
   `vote_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `question_id` int(10) unsigned NOT NULL,
@@ -24,3 +27,5 @@ CREATE TABLE `votes` (
   PRIMARY KEY (`vote_id`),
   KEY `question_id` (`question_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO _relations (`master_db`, `master_table`, `master_field`, `detail_db`, `detail_table`, `detail_id_field`, `detail_field`, `delete`) VALUES ((SELECT DATABASE()), 'questions', 'question_id', (SELECT DATABASE()), 'votes', 'vote_id', 'question_id', 'no-delete');
