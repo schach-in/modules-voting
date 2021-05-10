@@ -11,9 +11,9 @@
 <html lang="%%% page lang %%%">
 <head>
 	<title>%%% page pagetitle %%%</title>
-	<link rel="stylesheet" type="text/css" href="%%% setting behaviour_path %%%/ted/voting.css">
+	<link rel="stylesheet" type="text/css" href="%%% setting layout_path %%%/ted/voting.css">
 %%% condition if setting voting_custom_css %%%
-	<link rel="stylesheet" type="text/css" href="%%% setting behaviour_path %%%/voting.css">
+	<link rel="stylesheet" type="text/css" href="%%% setting layout_path %%%/voting.css">
 %%% condition endif %%%
 	<link rel="icon" href="/favicon.ico" type="image/x-ico">
 	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" type="image/png">
