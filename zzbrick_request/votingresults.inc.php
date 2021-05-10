@@ -12,7 +12,7 @@
  */
 
 
-function mod_ted_votingresults() {
+function mod_voting_votingresults() {
 	global $zz_setting;
 	global $zz_page;
 	$zz_page['dont_show_h1'] = true;

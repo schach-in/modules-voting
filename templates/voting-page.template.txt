@@ -11,7 +11,7 @@
 <html lang="%%% page lang %%%">
 <head>
 	<title>%%% page pagetitle %%%</title>
-	<link rel="stylesheet" type="text/css" href="%%% setting layout_path %%%/ted/voting.css">
+	<link rel="stylesheet" type="text/css" href="%%% setting layout_path %%%/voting/voting.css">
 %%% condition if setting voting_custom_css %%%
 	<link rel="stylesheet" type="text/css" href="%%% setting layout_path %%%/voting.css">
 %%% condition endif %%%
