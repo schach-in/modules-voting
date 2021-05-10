@@ -1,9 +1,15 @@
 <?php 
 
-// Zugzwang Project
-// deutsche-schachjugend.de
-// Copyright (c) 2019 Gustaf Mossakowski <gustaf@koenige.org>
-// TED voting
+/**
+ * voting module
+ * actual voting
+ *
+ * https://www.zugzwang.org/modules/voting
+ * Part of »Zugzwang Project«
+ *
+ * @author Gustaf Mossakowski <gustaf@koenige.org>
+ * @copyright Copyright © 2019 Gustaf Mossakowski
+ */
 
 
 function mod_ted_ted() {
