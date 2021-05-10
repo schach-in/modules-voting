@@ -1,12 +1,12 @@
 /**
- * Zugzwang Project
- * SQL for installation of ted module
+ * voting module
+ * SQL for installation of voting module
  *
- * http://www.zugzwang.org/modules/ted
+ * https://www.zugzwang.org/modules/voting
+ * Part of »Zugzwang Project«
  *
  * @author Gustaf Mossakowski <gustaf@koenige.org>
  * @copyright Copyright © 2021 Gustaf Mossakowski
- * @license http://opensource.org/licenses/lgpl-3.0.html LGPL-3.0
  */
 
 

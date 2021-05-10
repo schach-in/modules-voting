@@ -1,8 +1,15 @@
 <?php 
 
-// Zugzwang Project
-// Copyright (c) 2019 Gustaf Mossakowski <gustaf@koenige.org>
-// Skript: questions
+/**
+ * voting module
+ * table definition: questions
+ *
+ * https://www.zugzwang.org/modules/voting
+ * Part of »Zugzwang Project«
+ *
+ * @author Gustaf Mossakowski <gustaf@koenige.org>
+ * @copyright Copyright © 2019 Gustaf Mossakowski
+ */
 
 
 $zz['title'] = 'Fragen';
