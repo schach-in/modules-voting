@@ -6,26 +6,11 @@
  * Part of »Zugzwang Project«
  *
  * @author Gustaf Mossakowski <gustaf@koenige.org>
- * @copyright Copyright © 2021 Gustaf Mossakowski
+ * @copyright Copyright © 2019, 2021 Gustaf Mossakowski
  */
 
 
-@font-face	{ font-family: 'Fira Sans'; font-style: normal; font-weight: 400;
-			src: local('Fira Sans'), local('FiraSans-Regular'),
-			url(https://www.deutsche-schachjugend.de/_layout/fonts/FiraSans-Regular.woff2) format('woff2'),
-			url(https://www.deutsche-schachjugend.de/_layout/fonts/FiraSans-Regular.woff) format('woff'); }
-@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 700;
-			src: local('Fira Sans Bold'), local('FiraSans-Bold'),
-			url(https://www.deutsche-schachjugend.de/_layout/fonts/FiraSans-Bold.woff2) format('woff2'),
-			url(https://www.deutsche-schachjugend.de/_layout/fonts/FiraSans-Bold.woff) format('woff'); }
-@font-face { font-family: 'Fira Sans'; font-style: italic; font-weight: 400;
-			src: local('Fira Sans Italic'), local('FiraSans-Italic'),
-			url(https://www.deutsche-schachjugend.de/_layout/fonts/FiraSans-Italic.woff2) format('woff2'),
-			url(https://www.deutsche-schachjugend.de/_layout/fonts/FiraSans-Italic.woff) format('woff'); }
-
-
-html, body	{ margin: 0; padding: 0; height: 100%; width: 100%; 
-			font-family: "Fira Sans"; }
+html, body	{ margin: 0; padding: 0; height: 100%; width: 100%; }
 
 .tedtable	{ display: table; margin: auto; width: 360px; height: 100%; }
 .tedrow		{ display: table-row; }
