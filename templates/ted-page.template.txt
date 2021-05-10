@@ -11,7 +11,7 @@
 <html lang="%%% page lang %%%">
 <head>
 	<title>%%% page pagetitle %%%</title>
-	<link rel="stylesheet" type="text/css" href="%%% setting behaviour_path %%%/ted/ted.css">
+	<link rel="stylesheet" type="text/css" href="%%% setting behaviour_path %%%/ted/voting.css">
 %%% condition if setting voting_custom_css %%%
 	<link rel="stylesheet" type="text/css" href="%%% setting behaviour_path %%%/voting.css">
 %%% condition endif %%%
@@ -24,9 +24,9 @@
 %%% page head %%%
 </head>
 <body%%% page extra_body_attributes " %s" %%%>
-<div class="tedtable">
-<div class="tedrow">
-<div class="tedcell">
+<div class="voting_table">
+<div class="voting_row">
+<div class="voting_cell">
 %%% page text %%%
 </div>
 </div>
