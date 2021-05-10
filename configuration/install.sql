@@ -10,6 +10,7 @@
  */
 
 
+-- questions --
 CREATE TABLE `questions` (
   `question_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `question` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -18,6 +19,7 @@ CREATE TABLE `questions` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
+-- votes --
 CREATE TABLE `votes` (
   `vote_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `question_id` int(10) unsigned NOT NULL,
