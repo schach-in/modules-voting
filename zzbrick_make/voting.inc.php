@@ -12,7 +12,7 @@
  */
 
 
-function mod_ted_ted() {
+function mod_ted_make_voting() {
 	global $zz_setting;
 	$zz_setting['cache'] = false;
 	session_start();
