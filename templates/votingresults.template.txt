@@ -5,7 +5,7 @@
 # Part of »Zugzwang Project«
 #
 # @author Gustaf Mossakowski <gustaf@koenige.org>
-# @copyright Copyright © 2021 Gustaf Mossakowski
+# @copyright Copyright © 2019, 2021 Gustaf Mossakowski
 #
 %%% loop results %%%
 <div style="float: left; width: 90px; height: 300px; position: relative;">

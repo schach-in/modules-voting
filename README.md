@@ -12,7 +12,7 @@ Simple voting module for a website for Zugzwang Project CMS
 
 * Put code into a folder `_inc/modules`
 * Install database tables via maintenance script, section “Modules”
-* set page template to `ted-page`
+* set page template to `voting-page`
 
 ## Who do I talk to?
 

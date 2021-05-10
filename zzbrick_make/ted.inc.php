@@ -8,7 +8,7 @@
  * Part of »Zugzwang Project«
  *
  * @author Gustaf Mossakowski <gustaf@koenige.org>
- * @copyright Copyright © 2019 Gustaf Mossakowski
+ * @copyright Copyright © 2019, 2021 Gustaf Mossakowski
  */
 
 
@@ -41,6 +41,6 @@ function mod_ted_ted() {
 		}
 	}
 
-	$page['text'] = wrap_template('ted', $data);
+	$page['text'] = wrap_template('voting', $data);
 	return $page;
 }

@@ -8,7 +8,7 @@
  * Part of »Zugzwang Project«
  *
  * @author Gustaf Mossakowski <gustaf@koenige.org>
- * @copyright Copyright © 2019-2020 Gustaf Mossakowski
+ * @copyright Copyright © 2019-2021 Gustaf Mossakowski
  */
 
 
@@ -48,6 +48,6 @@ function mod_ted_tedresults() {
 		$data['results'][$answer]['votes'] = $data['results'][$answer]['votes'] / $data['sum'] * 300;
 	}	
 
-	$page['text'] = wrap_template('tedresults', $data);
+	$page['text'] = wrap_template('votingresults', $data);
 	return $page;
 }
