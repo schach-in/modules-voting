@@ -40,6 +40,9 @@ function mod_voting_make_voting() {
 			$data['voted'] = true;
 		}
 	}
+	$answers = wrap_get_setting('voting_answers');
+	foreach ($answers as $answer)
+		$data['answers'][]['answer'] = $answer;
 
 	$page['text'] = wrap_template('voting', $data);
 	return $page;

@@ -28,7 +28,7 @@ function mod_voting_votingresults() {
 	$sql = sprintf($sql, $data['question_id']);
 	$data['results_db'] = wrap_db_fetch($sql, 'answer');
 
-	$answers = ['A', 'B', 'C', 'D'];
+	$answers = wrap_get_setting('voting_answers');
 	foreach ($answers as $answer) {
 		if (!array_key_exists($answer, $data['results_db']))
 			$data['results'][$answer] = ['votes' => 0, 'answer' => $answer];
@@ -41,10 +41,9 @@ function mod_voting_votingresults() {
 	$data['results']['C']['votes'] = 300;
 	$data['results']['D']['votes'] = 200;
 */
-	$data['sum'] =
-		$data['results']['A']['votes'] + $data['results']['B']['votes'] +
-		$data['results']['C']['votes'] + $data['results']['D']['votes'];
+	$data['sum'] = 0;
 	foreach ($answers as $answer) {
+		$data['sum'] += $data['results'][$answer]['votes'];
 		$data['results'][$answer]['votes'] = $data['results'][$answer]['votes'] / $data['sum'] * 300;
 	}	
 
