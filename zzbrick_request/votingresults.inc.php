@@ -44,8 +44,12 @@ function mod_voting_votingresults() {
 	$data['sum'] = 0;
 	foreach ($answers as $answer) {
 		$data['sum'] += $data['results'][$answer]['votes'];
-		$data['results'][$answer]['votes'] = $data['results'][$answer]['votes'] / $data['sum'] * 300;
-	}	
+	}
+	if ($data['sum']) {
+		foreach ($answers as $answer) {
+			$data['results'][$answer]['votes'] = $data['results'][$answer]['votes'] / $data['sum'] * 300;
+		}
+	}
 
 	$page['text'] = wrap_template('votingresults', $data);
 	return $page;
