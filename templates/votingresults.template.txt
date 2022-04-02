@@ -5,11 +5,16 @@
 # Part of »Zugzwang Project«
 #
 # @author Gustaf Mossakowski <gustaf@koenige.org>
-# @copyright Copyright © 2019, 2021 Gustaf Mossakowski
+# @copyright Copyright © 2019, 2021-2022 Gustaf Mossakowski
 #
+%%% condition if no_active_question %%%
+<p>Es ist keine Frage als »aktiv« ausgewählt.</p>
+
+%%% condition else %%%
 %%% loop results %%%
 <div style="float: left; width: 90px; height: 300px; position: relative;">
 <div style="width: 60px; height: %%% item votes %%%px; min-height: 1px; position: absolute; bottom: 20px; background: red; "></div>
 <big><strong>%%% item answer %%%</strong></big>
 </div>
 %%% loop end %%%
+%%% condition endif %%%

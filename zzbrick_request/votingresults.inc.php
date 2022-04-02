@@ -21,6 +21,11 @@ function mod_voting_votingresults() {
 	$sql = 'SELECT question_id, question FROM questions
 		WHERE active = "yes" LIMIT 1';
 	$data = wrap_db_fetch($sql);
+	if (!$data) {
+		$data['no_active_question'] = true;
+		$page['text'] = wrap_template('votingresults', $data);
+		return $page;
+	}
 
 	$sql = 'SELECT COUNT(*) AS votes, answer FROM votes WHERE question_id = %d
 		AND NOT ISNULL(answer) AND answer != ""
