@@ -21,10 +21,15 @@ function mod_voting_make_voting() {
 	$sql = 'SELECT question_id, question FROM questions
 		WHERE active = "yes" LIMIT 1';
 	$data = wrap_db_fetch($sql);
-	if (!$data) $data['no_active_question'] = true;
-
+	if (!$data) {
+		$data['no_active_question'] = true;
+		$page['text'] = wrap_template('voting', $data);
+		return $page;
+	}
+	$session_id = $_COOKIE['PHPSESSID'] ?? '';
+	
 	$sql = 'SELECT * FROM votes WHERE question_id = %d AND voter_cookie ="%s"';
-	$sql = sprintf($sql, $data['question_id'], $_COOKIE['PHPSESSID']);
+	$sql = sprintf($sql, $data['question_id'], $session_id);
 	$answer = wrap_db_fetch($sql);
 	if ($answer) {
 		$data['already_voted'] = true;
@@ -35,7 +40,7 @@ function mod_voting_make_voting() {
 			$data['voted_for_different_question'] = true;
 		} else {
 			$sql = 'INSERT INTO votes (question_id, voter_cookie, answer, vote_date) VALUES (%d, "%s", "%s", "%s")';
-			$sql = sprintf($sql, $_POST['question_id'], $_COOKIE['PHPSESSID'], trim($_POST['answer']), date('Y-m-d H:i:s'));
+			$sql = sprintf($sql, $_POST['question_id'], $session_id, trim($_POST['answer']), date('Y-m-d H:i:s'));
 			wrap_db_query($sql);
 			$data['voted'] = true;
 		}
