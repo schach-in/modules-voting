@@ -6,20 +6,22 @@
  * Part of »Zugzwang Project«
  *
  * @author Gustaf Mossakowski <gustaf@koenige.org>
- * @copyright Copyright © 2019, 2021 Gustaf Mossakowski
+ * @copyright Copyright © 2019, 2021, 2023 Gustaf Mossakowski
  */
 
 
-html, body	{ margin: 0; padding: 0; height: 100%; width: 100%; }
+html.voting, .voting body
+				{ margin: 0; padding: 0; height: 100%; width: 100%; }
 
 .voting_table	{ display: table; margin: auto; width: 360px; height: 100%; }
 .voting_row		{ display: table-row; }
 .voting_cell	{ display: table-cell; width: 360px; vertical-align: middle; }
 
-input		{ width: 140px; height: 140px; font-size: 64px; border: none;
-			margin: 16px; font-weight: bold; padding: 0; }
-input:hover	{ background-color: red; }
+.voting input	{ width: 140px; height: 140px; font-size: 64px; border: none;
+				margin: 16px; font-weight: bold; padding: 0; }
+.voting input:hover
+				{ background-color: red; }
 
-a:link		{ text-decoration: none;}
+.voting a:link	{ text-decoration: none;}
 
-foot p		{ font-size: 80%; text-align: center; }
+.voting foot p	{ font-size: 80%; text-align: center; }

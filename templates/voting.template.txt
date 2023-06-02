@@ -5,7 +5,7 @@
 # Part of »Zugzwang Project«
 #
 # @author Gustaf Mossakowski <gustaf@koenige.org>
-# @copyright Copyright © 2019, 2021 Gustaf Mossakowski
+# @copyright Copyright © 2019, 2021, 2023 Gustaf Mossakowski
 #
 %%% condition if no_active_question %%%
 <p><big>Gerade kann keine Frage beantwortet werden.</big></p>

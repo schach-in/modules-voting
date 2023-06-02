@@ -5,10 +5,10 @@
 # Part of »Zugzwang Project«
 #
 # @author Gustaf Mossakowski <gustaf@koenige.org>
-# @copyright Copyright © 2019, 2021 Gustaf Mossakowski
+# @copyright Copyright © 2019, 2021, 2023 Gustaf Mossakowski
 #
 <!DOCTYPE html>
-<html lang="%%% page lang %%%">
+<html lang="%%% page lang %%%" class="voting">
 <head>
 	<title>%%% page pagetitle %%%</title>
 	<link rel="stylesheet" type="text/css" href="%%% setting layout_path %%%/voting/voting.css">
