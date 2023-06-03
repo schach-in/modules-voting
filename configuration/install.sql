@@ -6,13 +6,13 @@
  * Part of »Zugzwang Project«
  *
  * @author Gustaf Mossakowski <gustaf@koenige.org>
- * @copyright Copyright © 2021 Gustaf Mossakowski
+ * @copyright Copyright © 2021, 2023 Gustaf Mossakowski
  */
 
 
 -- questions --
 CREATE TABLE `questions` (
-  `question_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `question_id` int unsigned NOT NULL AUTO_INCREMENT,
   `question` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `active` enum('yes','no') COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`question_id`)
@@ -21,8 +21,8 @@ CREATE TABLE `questions` (
 
 -- votes --
 CREATE TABLE `votes` (
-  `vote_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `question_id` int(10) unsigned NOT NULL,
+  `vote_id` int unsigned NOT NULL AUTO_INCREMENT,
+  `question_id` int unsigned NOT NULL,
   `voter_cookie` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL,
   `answer` varchar(1) COLLATE utf8mb4_unicode_ci NOT NULL,
   `vote_date` datetime NOT NULL,
