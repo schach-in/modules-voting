@@ -20,7 +20,7 @@ html.voting, .voting body
 .voting input	{ width: 140px; height: 140px; font-size: 64px; border: none;
 				margin: 16px; font-weight: bold; padding: 0; }
 .voting input:hover
-				{ background-color: red; }
+				{ background-color: red; color: white; }
 
 .voting a:link	{ text-decoration: none;}
 
