@@ -8,13 +8,12 @@
  * Part of »Zugzwang Project«
  *
  * @author Gustaf Mossakowski <gustaf@koenige.org>
- * @copyright Copyright © 2019, 2021 Gustaf Mossakowski
+ * @copyright Copyright © 2019, 2021, 2023 Gustaf Mossakowski
  */
 
 
 function mod_voting_make_voting() {
-	global $zz_setting;
-	$zz_setting['cache'] = false;
+	wrap_setting('cache', false);
 	session_start();
 	$_SESSION['question'] = 'test';
 	

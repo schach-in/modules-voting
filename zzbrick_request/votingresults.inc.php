@@ -8,15 +8,14 @@
  * Part of »Zugzwang Project«
  *
  * @author Gustaf Mossakowski <gustaf@koenige.org>
- * @copyright Copyright © 2019-2021 Gustaf Mossakowski
+ * @copyright Copyright © 2019-2021, 2023 Gustaf Mossakowski
  */
 
 
 function mod_voting_votingresults() {
-	global $zz_setting;
-	global $zz_page;
-	$zz_page['dont_show_h1'] = true;
-	$zz_setting['cache'] = false;
+	$page = [];
+	$page['dont_show_h1'] = true;
+	wrap_setting('cache', false);
 	
 	$sql = 'SELECT question_id, question FROM questions
 		WHERE active = "yes" LIMIT 1';
