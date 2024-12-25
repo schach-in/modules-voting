@@ -5,26 +5,26 @@
 # Part of »Zugzwang Project«
 #
 # @author Gustaf Mossakowski <gustaf@koenige.org>
-# @copyright Copyright © 2019, 2021, 2023 Gustaf Mossakowski
+# @copyright Copyright © 2019, 2021, 2023-2024 Gustaf Mossakowski
 #
-%%% condition if no_active_question %%%
+%%% if no_active_question %%%
 <p><big>Gerade kann keine Frage beantwortet werden.</big></p>
 
 <p><big><a href="%%% setting voting_path %%%">Erneut versuchen</a></big></p>
 
-%%% condition elseif already_voted %%%
+%%% elseif already_voted %%%
 <p><big>Zweimal abstimmen geht nicht.</big></p>
 
 <p><big><a href="%%% setting voting_path %%%">Erneut versuchen</a></big></p>
-%%% condition elseif voted %%%
+%%% elseif voted %%%
 <p><big>Danke, die Stimme ist eingegangen!</big></p>
 
 <p><big><a href="%%% setting voting_path %%%">Zur nächsten Abstimmung.</a></big></p>
 
-%%% condition else %%%
-%%% condition if voted_for_different_question %%%
+%%% else %%%
+%%% if voted_for_different_question %%%
 <p><big>Die Stimme wurde nicht gezählt, da wir schon bei der nächsten Frage sind!</big></p>
-%%% condition endif %%%
+%%% endif %%%
 
 <form action="%%% setting voting_path %%%" method="POST">
 
@@ -34,4 +34,4 @@
 <input type="hidden" name="question_id" value="%%% item question_id %%%">
 
 </form>
-%%% condition endif %%%
+%%% endif %%%

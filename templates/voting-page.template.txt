@@ -5,22 +5,22 @@
 # Part of »Zugzwang Project«
 #
 # @author Gustaf Mossakowski <gustaf@koenige.org>
-# @copyright Copyright © 2019, 2021, 2023 Gustaf Mossakowski
+# @copyright Copyright © 2019, 2021, 2023-2024 Gustaf Mossakowski
 #
 <!DOCTYPE html>
 <html lang="%%% page lang %%%" class="voting">
 <head>
 	<title>%%% page pagetitle %%%</title>
 	<link rel="stylesheet" type="text/css" href="%%% setting layout_path %%%/voting/voting.css">
-%%% condition if setting voting_custom_css %%%
+%%% if setting voting_custom_css %%%
 	<link rel="stylesheet" type="text/css" href="%%% setting layout_path %%%/voting.css">
-%%% condition endif %%%
+%%% endif %%%
 	<link rel="icon" href="/favicon.ico" type="image/x-ico">
 	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" type="image/png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-%%% condition if page description %%%
+%%% if page description %%%
 	<meta name="description" content="%%% page description %%%">
-%%% condition endif %%%
+%%% endif %%%
 %%% page head %%%
 </head>
 <body%%% page extra_body_attributes " %s" %%%>
