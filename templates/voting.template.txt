@@ -34,4 +34,5 @@
 <input type="hidden" name="question_id" value="%%% item question_id %%%">
 
 </form>
+%%% script default/form-submit-once.js %%%
 %%% endif %%%
